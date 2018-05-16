@@ -1,0 +1,418 @@
+/* MAIN CSS */
+body {
+  padding-top: 80px;
+  height: 100%;
+  width: 100%; }
+  ::-webkit-input-placeholder {
+    font-style: italic;
+    font-size: .8em;
+   }
+   :-moz-placeholder {
+    font-style: italic;
+    font-size: .8em;
+   }
+   ::-moz-placeholder {
+    font-style: italic;
+    font-size: .8em;
+   }
+   :-ms-input-placeholder {
+    font-style: italic;
+    font-size: .8em;
+   }
+   .btn-add-ingrediente{
+     border: 2px solid grey;
+     border-radius: 20px;
+   }
+
+.hide {
+  display: none; }
+
+.bordered {
+  border: #E01F85 5px solid;
+  border-radius: 20px; }
+
+.dk-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; }
+
+.grey-overlay {
+  position: absolute;
+  background-color: rgba(125, 125, 125, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background-color .5s; }
+
+.line {
+  background-color: #f0f0f0;
+  width: 100%;
+  float: center; }
+
+/* HEADER */
+nav {
+  border-bottom: #E01F85 5px solid; }
+  nav img {
+    width: auto;
+    height: 70px; }
+
+.white-box {
+  background: #fff;
+  border-radius: 12px 12px 0 0;
+  padding: .5em;
+  width: auto;
+  height: 80px;
+  margin-top: 0; }
+
+@media screen and (max-width: 992px) {
+  #navbar .brand {
+    margin-top: 10px; }
+  #navbar .menu-bar {
+    display: block;
+    float: right; }
+    #navbar .menu-bar .bt-menu {
+      color: white; }
+    #navbar .menu-bar i {
+      font-size: 40px; }
+  #navbar li {
+    float: none;
+    border-bottom: #E01F85 solid 2px; }
+  .navigate {
+    width: 50%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    margin-top: 92px;
+    position: fixed;
+    background: #89A327; } }
+
+/* FOOTER */
+#footer {
+  border-top: #E01F85 solid 2px; }
+  #footer .icon-link {
+    font-size: 2em;
+    margin: 5px;
+    color: #fff; }
+  #footer img {
+    height: 50px;
+    width: 140px; }
+
+/*************************VENTANA GRANDE *******************/
+@media screen and (min-width: 992px) {
+  header {
+    width: 999px; }
+  #background {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #c4e5f2; }
+  #sol {
+    background: #edb709;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin-left: 150px;
+    margin-top: 50px; }
+  #tierra {
+    background: url("../img/nopal/TIERRA.png");
+    background-size: 30% 100%;
+    position: fixed;
+    bottom: 0;
+    height: 40%;
+    width: 100%; }
+  #logo {
+    background: url("../img/LOGO_II.png");
+    background-size: 10%;
+    position: fixed;
+    top: 15%;
+    left: 48%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    -webkit-transition: top 1s, background-size 1s; }
+  #goRight {
+    padding-right: .5em;
+    -webkit-transition: padding-right 1s; }
+  #goLeft {
+    padding-left: .5em;
+    -webkit-transition: padding-left 1s; }
+  #fondo {
+    display: none;
+    background: url("../img/nopal/CONTORNO_SEMILLA1.png");
+    background-size: 10%;
+    background-position: center;
+    position: fixed;
+    top: 23%;
+    left: 2%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    -webkit-transition: top 1s, background-size 1s; }
+  #semilla {
+    display: none;
+    background: url("../img/nopal/SEMILLA_1.png");
+    background-size: 8%;
+    position: fixed;
+    background-position: center;
+    top: 38%;
+    left: 17%;
+    height: 70%;
+    width: 70%;
+    background-repeat: no-repeat;
+    -webkit-transition: top 1s, background-size 1s; } }
+
+@media screen and (max-width: 1024px) {
+  #semilla {
+    background: url("../img/nopal/SEMILLA_1.png");
+    background-size: 8%;
+    position: fixed;
+    background-position: center;
+    top: 36%;
+    left: 17%;
+    height: 70%;
+    width: 70%;
+    background-repeat: no-repeat;
+    -webkit-transition: top 1s, background-size 1s; } }
+
+/*************************VENTANA CHICA *******************/
+@media screen and (max-width: 992px) {
+  header {
+    width: 992px; }
+  #background {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #c4e5f2; }
+  #sol {
+    background: #edb709;
+    height: 75px;
+    width: 75px;
+    border-radius: 150px;
+    margin-left: 75px;
+    margin-top: 75px; }
+  #tierra {
+    background: url("../img/nopal/TIERRA.png");
+    background-size: 50% 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 35%;
+    width: 100%; }
+  #logo {
+    background: url("../img/LOGO_II.png");
+    background-size: 15%;
+    position: fixed;
+    top: 15%;
+    left: 45%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    -webkit-transition: top 1s, background-size 1s; } }
+
+/* INDEX */
+#enviroment {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+#cielo {
+  background: url("../img/nopal/TIERRA.png"), url("../img/nopal/CIELO.png"), #c4e5f2;
+  background-position: left bottom, 10% top;
+  background-repeat: repeat-x, no-repeat;
+  background-size: 30%,40%,auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#semilla_bg {
+  position: absolute;
+  bottom: 20%;
+  left: 46%;
+  width: 150px;
+  height: 150px;
+  display: none;
+  -webkit-transition: width 1s,height 1s; }
+
+#helper {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.left-bar {
+  width: 20px;
+  height: 800%; }
+
+.navbar {
+  background: rgba(50, 90, 63, 0); }
+
+a.nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5); }
+
+a:hover {
+  color: white; }
+
+a.active {
+  color: white; }
+
+ul.navbar-nav li {
+  margin-right: 50px;
+  margin-left: 50px; }
+
+.logo {
+  height: 250px;
+  width: auto;
+  margin-top: 50%;
+  -webkit-transition: width 1s, height 1s, margin-right 1s,margin-top 1s; }
+
+#header {
+  position: relative;
+  min-height: 100%;
+  background: url("../img/slide2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff; }
+
+/* RECETARIO */
+#mega2 {
+  background: #fff;
+  height: 700px;
+  width: 100%; }
+
+#main {
+  height: auto;
+  width: 100%;
+  background: url("../img/slide3.jpg");
+  text-align: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff; }
+  #main .align-middle {
+    top: 50%; }
+  #main .circle {
+    border-radius: 1.25rem; }
+
+#filter {
+  text-align: center; }
+  #filter .input-group-addon {
+    background: rgba(255, 255, 255, 0.5); }
+
+#recepies {
+  height: auto;
+  width: 100%;
+  -webkit-transition: max-height 1.7s ease; }
+  #recepies .img-background {
+    height: 350px; }
+  #recepies .circle {
+    border-radius: 1.25rem; }
+  #recepies .isRecepie {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    max-height: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: max-height .5s; }
+
+/*ARGUMENTOS */
+#argumentos_init {
+  height: 400px;
+  width: 100%;
+  background: url("../img/slide6.jpg");
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff; }
+  #argumentos_init .dk-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; }
+
+.v-align {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; }
+
+.text-compressed {
+  height: 100px;
+  background: -webkit-linear-gradient(#333, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+/* Directorio */
+.filter_width_100 {
+  width: 100%; }
+
+.forma-extendida {
+  width: 600px; }
+
+#map {
+  height: 400px;
+  width: 100%; }
+
+#main_dir .card {
+  width: 100%; }
+
+#dir .carta {
+  border: 2px solid #777;
+  width: 100%;
+  border-radius: 10px; }
+
+#dir img {
+  width: 250px;
+  height: auto; }
+
+#header_dir {
+  height: 200px;
+  width: 100%;
+  background: url("../img/slide7.jpg");
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff; }
+  #header_dir .dk-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%; }
+
+/* CONTACT */
+#contact {
+  height: 200px;
+  width: 100%;
+  background: url("../img/slide2.jpg");
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff; }
+  #contact .dk-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%; }
